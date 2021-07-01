@@ -1,0 +1,12 @@
+@mixin breathe($from: 1, $to: 0.8, $duration: 0.8s) {
+  animation: breathe $duration ease-in-out infinite alternate;
+
+  @keyframes breathe {
+    from {
+      transform: scale($from);
+    }
+    to {
+      transform: scale($to);
+    }
+  }
+}

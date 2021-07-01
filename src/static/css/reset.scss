@@ -1,0 +1,18 @@
+/* RESET */
+button, text, view, form, image {
+	box-sizing: border-box;
+}
+button {
+	margin: 0;
+	padding: 0;
+	font-size: 32upx;
+	background-color: transparent;
+  
+	&::after {
+		display: none;
+	}
+  
+	&:active {
+		transform: scale(.95);
+	}
+}
